@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        id="com.beaconinside.sdk"
+        version="1.1">
+    <name>Beaconinside SDK</name>
+    <description>The Beaconinside SDK simplifies the integration of beacons, geofences and proximity services into your Cordova app.</description>
+    <keywords>cordova,bluetooth,ibeacon,eddystone,geofencing</keywords>
+    <author>Beaconinside GmbH</author>
+    <repo>https://github.com/beaconinside/cordova-sdk.git</repo>
+    <issue>https://github.com/beaconinside/cordova-sdk/issues</issue>
+    <license>Commercial</license>
+
+    <js-module src="www/beaconinside.js" name="beaconinside">
+        <clobbers target="cordova.beaconinside" />
+    </js-module>
+
+
+    <!-- android -->
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="BeaconinsideSDK" >
+                <param name="android-package" value="com.beaconinside.androidsdk.SdkPlugin"/>
+            </feature>
+        </config-file>
+
+        <source-file src="src/android/SdkPlugin.java" target-dir="src/com/beaconinside/androidsdk" />
+
+        <framework src="com.android.support:support-v4:+" />
+
+        <framework src="com.google.android.gms:play-services-location:11.0.1" />
+        <framework src="com.google.android.gms:play-services-ads:11.0.1" />
+        <framework src="com.google.android.gms:play-services-gcm:11.0.1" />
+
+        <framework src="src/android/beaconinside-sdk" custom="true" />
+    </platform>
+
+    <!-- ios -->
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="BeaconinsideSDK">
+                <param name="ios-package" value="BeaconinsideSdkPlugin"/>
+            </feature>
+        </config-file>
+
+        <source-file src="src/ios/BeaconinsideSdkPlugin.m"  target-dir="src/com/beaconinside/iossdk"/>
+
+        <framework src="src/ios/BeaconService.framework" custom="true"/>
+        <framework src="CoreLocation.framework" />
+		    <framework src="CoreBluetooth.framework" />
+        <framework src="SystemConfiguration.framework" />
+        <framework src="libz.dylib" />
+    </platform>
+
+</plugin>

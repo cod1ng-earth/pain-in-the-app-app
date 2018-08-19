@@ -1,0 +1,99 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {
+      "config.xml": {
+        "parents": {
+          "/*": [
+            {
+              "xml": "<feature name=\"BeaconinsideSDK\"><param name=\"ios-package\" value=\"BeaconinsideSdkPlugin\" /></feature>",
+              "count": 1
+            },
+            {
+              "xml": "<feature name=\"broadcaster\"><param name=\"ios-package\" value=\"CDVBroadcaster\" /></feature>",
+              "count": 1
+            },
+            {
+              "xml": "<feature name=\"Geolocation\"><param name=\"ios-package\" value=\"CDVLocation\" /></feature>",
+              "count": 1
+            }
+          ]
+        }
+      }
+    }
+  },
+  "installed_plugins": {
+    "com.beaconinside.sdk": {
+      "PACKAGE_NAME": "de.bvg.pita"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "de.bvg.pita"
+    },
+    "cordova-plugin-broadcaster": {
+      "PACKAGE_NAME": "de.bvg.pita"
+    },
+    "cordova-plugin-geolocation": {
+      "PACKAGE_NAME": "de.bvg.pita"
+    }
+  },
+  "dependent_plugins": {},
+  "modules": [
+    {
+      "id": "com.beaconinside.sdk.beaconinside",
+      "file": "plugins/com.beaconinside.sdk/www/beaconinside.js",
+      "pluginId": "com.beaconinside.sdk",
+      "clobbers": [
+        "cordova.beaconinside"
+      ]
+    },
+    {
+      "id": "cordova-plugin-broadcaster.broadcaster",
+      "file": "plugins/cordova-plugin-broadcaster/www/broadcaster.js",
+      "pluginId": "cordova-plugin-broadcaster",
+      "clobbers": [
+        "broadcaster"
+      ]
+    },
+    {
+      "id": "cordova-plugin-geolocation.Coordinates",
+      "file": "plugins/cordova-plugin-geolocation/www/Coordinates.js",
+      "pluginId": "cordova-plugin-geolocation",
+      "clobbers": [
+        "Coordinates"
+      ]
+    },
+    {
+      "id": "cordova-plugin-geolocation.PositionError",
+      "file": "plugins/cordova-plugin-geolocation/www/PositionError.js",
+      "pluginId": "cordova-plugin-geolocation",
+      "clobbers": [
+        "PositionError"
+      ]
+    },
+    {
+      "id": "cordova-plugin-geolocation.Position",
+      "file": "plugins/cordova-plugin-geolocation/www/Position.js",
+      "pluginId": "cordova-plugin-geolocation",
+      "clobbers": [
+        "Position"
+      ]
+    },
+    {
+      "id": "cordova-plugin-geolocation.geolocation",
+      "file": "plugins/cordova-plugin-geolocation/www/geolocation.js",
+      "pluginId": "cordova-plugin-geolocation",
+      "clobbers": [
+        "navigator.geolocation"
+      ]
+    }
+  ],
+  "plugin_metadata": {
+    "com.beaconinside.sdk": "1.1",
+    "cordova-plugin-whitelist": "1.3.3",
+    "cordova-plugin-broadcaster": "2.2.1",
+    "cordova-plugin-geolocation": "4.0.1"
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "_from": "git+https://github.com/beaconinside/cordova-broadcaster.git",
+  "_id": "cordova-plugin-broadcaster@2.2.1",
+  "_inBundle": false,
+  "_integrity": "",
+  "_location": "/cordova-plugin-broadcaster",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "git",
+    "raw": "https://github.com/beaconinside/cordova-broadcaster",
+    "rawSpec": "https://github.com/beaconinside/cordova-broadcaster",
+    "saveSpec": "git+https://github.com/beaconinside/cordova-broadcaster.git",
+    "fetchSpec": "https://github.com/beaconinside/cordova-broadcaster.git",
+    "gitCommittish": null
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "git+https://github.com/beaconinside/cordova-broadcaster.git#5da3530bf6888f6f23a12b9dd359d86facd82be2",
+  "_spec": "https://github.com/beaconinside/cordova-broadcaster",
+  "_where": "/Users/stadolf/work/bvg-api/painintheapp",
+  "author": {
+    "name": "bsorrentino"
+  },
+  "bugs": {
+    "url": "https://github.com/bsorrentino/cordova-broadcaster/issues"
+  },
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "cordova-plugin-broadcaster",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "deprecated": false,
+  "description": "Allow send message from Javascript to Native",
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.9.1"
+    }
+  ],
+  "homepage": "https://github.com/bsorrentino/cordova-broadcaster#readme",
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios"
+  ],
+  "license": "MIT",
+  "name": "cordova-plugin-broadcaster",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bsorrentino/cordova-broadcaster.git"
+  },
+  "version": "2.2.1"
+}

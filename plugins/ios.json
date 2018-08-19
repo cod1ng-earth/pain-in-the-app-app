@@ -1,0 +1,24 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "com.beaconinside.sdk": {
+      "PACKAGE_NAME": "de.bvg.pita"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "de.bvg.pita"
+    },
+    "cordova-plugin-broadcaster": {
+      "PACKAGE_NAME": "de.bvg.pita"
+    },
+    "cordova-plugin-geolocation": {
+      "PACKAGE_NAME": "de.bvg.pita"
+    }
+  },
+  "dependent_plugins": {}
+}
